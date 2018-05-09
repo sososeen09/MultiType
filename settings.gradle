@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-include ':sample'
+include ':sample', ':simple-multi-type'
 include ':library'
 include ':library-kotlin'
 
