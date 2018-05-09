@@ -1,11 +1,27 @@
 apply plugin: 'com.android.library'
 
 ext {
+    bintrayRepo = 'maven'
     bintrayName = 'simple-multi-type'
-    artifact = bintrayName
+
+    publishedGroupId = 'com.github.sososeen09'
     libraryName = 'simple-multi-type'
+    artifact = 'simple-multi-type'
+
     libraryDescription = 'simple use multi type'
+
+    siteUrl = 'https://github.com/sososeen09/MultiType'
+    gitUrl = 'https://github.com/sososeen09/MultiType'
+
     libraryVersion = '1.0.0'
+
+    developerId = 'sososeen09'
+    developerName = 'yunlong.su'
+    developerEmail = 'sososeen09@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
 }
 
 android {
@@ -15,6 +31,13 @@ android {
     defaultConfig {
         minSdkVersion gradle.minSdkVersion
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    lintOptions { abortOnError false }
 
     buildTypes {
         release {
@@ -29,8 +52,6 @@ android {
     }
 
 }
-
-
 
 dependencies {
     compileOnly 'me.drakeet.multitype:multitype:3.4.4'
