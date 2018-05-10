@@ -55,7 +55,7 @@ android {
 }
 
 dependencies {
-    compileOnly 'me.drakeet.multitype:multitype:3.4.4'
+    api 'me.drakeet.multitype:multitype:3.4.4'
 }
 
 //添加
@@ -63,7 +63,7 @@ publish {
     userOrg = 'sososeen09'
     groupId = 'com.github.sososeen09'
     artifactId = 'simple-multi-type'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     desc = 'simple use multi type'
     website =  'https://github.com/sososeen09/MultiType'
 }
