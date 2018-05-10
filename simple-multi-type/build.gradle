@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 ext {
     bintrayRepo = 'maven'
@@ -57,6 +58,15 @@ dependencies {
     compileOnly 'me.drakeet.multitype:multitype:3.4.4'
 }
 
+//添加
+publish {
+    userOrg = 'sososeen09'
+    groupId = 'com.github.sososeen09'
+    artifactId = 'simple-multi-type'
+    publishVersion = '1.0.0'
+    desc = 'simple use multi type'
+    website =  'https://github.com/sososeen09/MultiType'
+}
 
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
